@@ -14,5 +14,6 @@ export function meta(_args: Route.MetaArgs) {
 export default function Home() {
   return (
       <StarMap />
+    </>
   );
 }
