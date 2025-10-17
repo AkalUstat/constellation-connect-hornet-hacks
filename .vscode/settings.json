@@ -1,7 +1,7 @@
 {
   // Tell the ESLint extension to run against the frontend/ directory
   "eslint.workingDirectories": [
-    { "directory": "frontend", "changeProcessCWD": true }
+     { "directory": "frontend", "changeProcessCWD": true }
   ],
   // This is the key setting for auto-fixing on save
   "editor.codeActionsOnSave": {
