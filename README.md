@@ -23,3 +23,7 @@ MacOS: `source constellation/bin/activate`
 - to update the dependencies: 
 
         pip freeze > requirements.txt
+
+
+**Using D3**:
+- https://d3js.org/getting-started#d3-in-react
