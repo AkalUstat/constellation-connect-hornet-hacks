@@ -5,4 +5,16 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  optimizeDeps: {
+    include: ["react", "react-dom","react-router", "react-router-dom"],
+    force: true,
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"],
+  },
+  server: {
+    watch: {
+      usePolling: true, // helps on macOS + FS cache issues
+    },
+  },
 });
