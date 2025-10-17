@@ -1,0 +1,410 @@
+[
+  {
+    "name": "Engineering & Computer Science Joint Council",
+    "category": "Engineering & Computer Science Joint Council",
+    "related": [
+      "Order of the Engineer"
+    ],
+    "discord": "https://discord.com/channels/1037749451365822524/1037749451852353646",
+    "president": "Aadil Bhat"
+  },
+  {
+    "name": "Order of the Engineer",
+    "category": "Professional / Honor",
+    "related": [
+      "Engineering & Computer Science Joint Council"
+    ],
+    "discord": null,
+    "president": null
+  },
+  {
+    "name": "American Concrete Institute",
+    "category": "Civil Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Concrete Canoe Club"
+    ],
+    "discord": null,
+    "president": "Muna Mandoob"
+  },
+  {
+    "name": "American Society of Civil Engineers",
+    "category": "Civil Engineering",
+    "related": [
+      "Concrete Canoe Club",
+      "Institute of Transportation Engineers"
+    ],
+    "discord": null,
+    "president": "Rodaina Abdelhafiz"
+  },
+  {
+    "name": "Concrete Canoe Club",
+    "category": "Civil Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "American Concrete Institute",
+      "American Society of Civil Engineers"
+    ],
+    "discord": null,
+    "president": "Ryan Tan"
+  },
+  {
+    "name": "California Geotechnical Engineering Association",
+    "category": "Civil Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Geo-Challenge"
+    ],
+    "discord": null,
+    "president": "Faith Tafoya"
+  },
+  {
+    "name": "California Water Environment Association",
+    "category": "Civil Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Water Treatment Club"
+    ],
+    "discord": null,
+    "president": "Kenneth Duenas"
+  },
+  {
+    "name": "Geo-Challenge",
+    "category": "Civil / Geotechnical Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "California Geotechnical Engineering Association"
+    ],
+    "discord": null,
+    "president": "Yuejiang Qu"
+  },
+  {
+    "name": "Institute of Transportation Engineers",
+    "category": "Civil / Transportation Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Transportation Challenge"
+    ],
+    "discord": null,
+    "president": "Geoffrey Tolentino"
+  },
+  {
+    "name": "Pre-cast Pre-Stressed Concrete Institute",
+    "category": "Civil / Structural Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Structural Engineering Association of Central California"
+    ],
+    "discord": null,
+    "president": "Crystal Mae Barlaan"
+  },
+  {
+    "name": "Structural Engineering Association of Central California",
+    "category": "Civil / Structural Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Pre-cast Pre-Stressed Concrete Institute"
+    ],
+    "discord": null,
+    "president": "Yuliy Ludov"
+  },
+  {
+    "name": "Transportation Challenge",
+    "category": "Civil / Transportation Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "Institute of Transportation Engineers"
+    ],
+    "discord": null,
+    "president": "Helal Murad"
+  },
+  {
+    "name": "Water Treatment Club",
+    "category": "Civil / Environmental Engineering",
+    "related": [
+      "American Society of Civil Engineers",
+      "California Water Environment Association"
+    ],
+    "discord": null,
+    "president": "Kenneth Duenas"
+  },
+  {
+    "name": "Associated General Contractors",
+    "category": "Construction Management",
+    "related": [
+      "Construction Management Association of America Student Chapter",
+      "Construction Management Student Association"
+    ],
+    "discord": null,
+    "president": "Liz Rodriguez Topete"
+  },
+  {
+    "name": "Construction Management Association of America Student Chapter",
+    "category": "Construction Management",
+    "related": [
+      "Associated General Contractors",
+      "Construction Management Student Association"
+    ],
+    "discord": null,
+    "president": "Jakob Miller"
+  },
+  {
+    "name": "Construction Management Student Association",
+    "category": "Construction Management",
+    "related": [
+      "Associated General Contractors",
+      "Construction Management Association of America Student Chapter",
+      "Mechanical Contractors Association of America",
+      "The Beavers",
+      "Women In Construction"
+    ],
+    "discord": null,
+    "president": "Fernando Gonzalez"
+  },
+  {
+    "name": "Mechanical Contractors Association of America",
+    "category": "Construction Management",
+    "related": [
+      "Construction Management Student Association",
+      "The Beavers"
+    ],
+    "discord": null,
+    "president": "Tyler Jin"
+  },
+  {
+    "name": "The Beavers",
+    "category": "Construction Management",
+    "related": [
+      "Construction Management Student Association",
+      "Mechanical Contractors Association of America"
+    ],
+    "discord": null,
+    "president": "Dustin Garcia"
+  },
+  {
+    "name": "Women In Construction",
+    "category": "Construction Management / Diversity",
+    "related": [
+      "Construction Management Association of America Student Chapter",
+      "Construction Management Student Association"
+    ],
+    "discord": null,
+    "president": "Adriana Espinoza"
+  },
+  {
+    "name": "Association for Computing Machinery",
+    "category": "Computer Science",
+    "related": [
+      "Cyber Security Club",
+      "Data Structures and Algorithms"
+    ],
+    "discord": null,
+    "president": "Ajaydeep Singh"
+  },
+  {
+    "name": "Cyber Security Club",
+    "category": "Computer Science",
+    "related": [
+      "Association for Computing Machinery",
+      "Data Science Club",
+      "Data Structures and Algorithms"
+    ],
+    "discord": null,
+    "president": "Philip Colton"
+  },
+  {
+    "name": "Data Structures and Algorithms",
+    "category": "Computer Science",
+    "related": [
+      "Association for Computing Machinery",
+      "Cyber Security Club"
+    ],
+    "discord": null,
+    "president": "Brayan Mejia Nunez"
+  },
+  {
+    "name": "Girls Who Code",
+    "category": "Computer Science / Diversity",
+    "related": [
+      "Association for Computing Machinery",
+      "Society of Women Engineers"
+    ],
+    "discord": null,
+    "president": "Salma Aboukhadra"
+  },
+  {
+    "name": "Video Game Design Club",
+    "category": "Computer Science / Game Dev",
+    "related": [
+      "Association for Computing Machinery"
+    ],
+    "discord": null,
+    "president": "Dylan Wright"
+  },
+  {
+    "name": "Power and Energy Society",
+    "category": "Electrical & Electronic Engineering",
+    "related": [
+      "American Society of Mechanical Engineers",
+      "Hornet Aerospace and Propulsion"
+    ],
+    "discord": null,
+    "president": "Armaan Randhawa"
+  },
+  {
+    "name": "American Society of Mechanical Engineers",
+    "category": "Mechanical Engineering",
+    "related": [
+      "Hornet Racing - Formula SAE",
+      "Society of Manufacturing Engineers"
+    ],
+    "discord": null,
+    "president": "Stephanie Summers"
+  },
+  {
+    "name": "Forensic Engineering Club",
+    "category": "Mechanical Engineering",
+    "related": [
+      "American Society of Mechanical Engineers"
+    ],
+    "discord": null,
+    "president": "Carissa Palasigue"
+  },
+  {
+    "name": "Hornet Aerospace and Propulsion",
+    "category": "Mechanical / Aerospace",
+    "related": [
+      "Hornet Racing - Formula SAE",
+      "Power and Energy Society",
+      "Vertical Flight Society"
+    ],
+    "discord": null,
+    "president": "Devon Nelson"
+  },
+  {
+    "name": "Hornet Racing - Formula SAE",
+    "category": "Mechanical / Motorsports",
+    "related": [
+      "American Society of Mechanical Engineers",
+      "Hornet Aerospace and Propulsion",
+      "Society of Manufacturing Engineers"
+    ],
+    "discord": null,
+    "president": "Nicolas Pfeifer"
+  },
+  {
+    "name": "Material Advantage Club",
+    "category": "Mechanical / Materials",
+    "related": [
+      "American Society of Mechanical Engineers",
+      "Society of Manufacturing Engineers"
+    ],
+    "discord": "discord.gg/54rCnh36ED",
+    "president": "Luis Guillermo Serrano"
+  },
+  {
+    "name": "Society of Manufacturing Engineers",
+    "category": "Mechanical Engineering",
+    "related": [
+      "American Society of Mechanical Engineers",
+      "Hornet Racing - Formula SAE",
+      "Material Advantage Club"
+    ],
+    "discord": null,
+    "president": "Aidan Coyle"
+  },
+  {
+    "name": "Vertical Flight Society",
+    "category": "Mechanical / Aerospace",
+    "related": [
+      "Hornet Aerospace and Propulsion"
+    ],
+    "discord": null,
+    "president": "Ryan Younger"
+  },
+  {
+    "name": "Competitive Robotics Club",
+    "category": "Cross-Discipline (EE/ME/CS)",
+    "related": [
+      "Association for Computing Machinery",
+      "American Society of Mechanical Engineers"
+    ],
+    "discord": null,
+    "president": "Kendra Mohle"
+  },
+  {
+    "name": "Data Science Club",
+    "category": "Cross-Discipline (Data Science)",
+    "related": [
+      "Association for Computing Machinery",
+      "Cyber Security Club"
+    ],
+    "discord": null,
+    "president": "Umang Vadhar"
+  },
+  {
+    "name": "Engineers Without Borders",
+    "category": "Cross-Discipline / Service",
+    "related": [
+      "American Society of Civil Engineers",
+      "Society of Women Engineers"
+    ],
+    "discord": null,
+    "president": "Corey Theiss"
+  },
+  {
+    "name": "National Society of Black Engineers",
+    "category": "STEM Diversity",
+    "related": [
+      "Society of Asian Scientists and Engineers",
+      "Society of Hispanic Professional Engineers",
+      "Society of Women Engineers"
+    ],
+    "discord": null,
+    "president": "Aminata Fall"
+  },
+  {
+    "name": "Society of Asian Scientists and Engineers",
+    "category": "STEM Diversity",
+    "related": [
+      "National Society of Black Engineers",
+      "Society of Hispanic Professional Engineers",
+      "Society of Women Engineers"
+    ],
+    "discord": null,
+    "president": "Ralion Luperte"
+  },
+  {
+    "name": "Society of Hispanic Professional Engineers",
+    "category": "STEM Diversity",
+    "related": [
+      "National Society of Black Engineers",
+      "Society of Asian Scientists and Engineers",
+      "Society of Women Engineers"
+    ],
+    "discord": null,
+    "president": "Josue S. Garcia"
+  },
+  {
+    "name": "Society of Women Engineers",
+    "category": "STEM Diversity",
+    "related": [
+      "Girls Who Code",
+      "National Society of Black Engineers",
+      "Society of Asian Scientists and Engineers",
+      "Society of Hispanic Professional Engineers"
+    ],
+    "discord": null,
+    "president": "Keerat Khandpur"
+  },
+  {
+    "name": "Tau Beta Pi",
+    "category": "Engineering Honor Society",
+    "related": [
+      "Association for Computing Machinery",
+      "American Society of Mechanical Engineers"
+    ],
+    "discord": null,
+    "president": "Alex Lindstrom"
+  }
+]
