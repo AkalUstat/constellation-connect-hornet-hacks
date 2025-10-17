@@ -1,0 +1,19 @@
+{
+  // Tell the ESLint extension to run against the frontend/ directory
+  "eslint.workingDirectories": [
+    { "directory": "frontend", "changeProcessCWD": true }
+  ],
+  // This is the key setting for auto-fixing on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Add language validation to ensure ESLint runs on TSX files
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  // Prevent other formatters from conflicting
+  "editor.formatOnSave": false
+}
