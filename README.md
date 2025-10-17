@@ -19,3 +19,7 @@ MacOS: `source constellation/bin/activate`
 • Install the project's dependencies using the requirements.txt file: 
 
         pip install -r requirements.txt
+
+- to update the dependencies: 
+
+        pip freeze > requirements.txt
