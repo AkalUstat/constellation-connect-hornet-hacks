@@ -3,12 +3,12 @@ import {
   Links,
   Meta,
   Outlet,
-  Scripts,
-  ScrollRestoration,
+  Scripts
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import Header from "./components/Header";
+import Header from "./Components/Header";
+
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -33,10 +33,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="fixed inset-0 h-screen w-screen overflow-hidden">
         <Header />
         {children}
-        <ScrollRestoration />
+        {/* <ScrollRestoration /> */}
 <div>
 
 </div>

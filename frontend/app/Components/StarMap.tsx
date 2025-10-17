@@ -1,5 +1,5 @@
 import React from "react";
-import spaceTheme from "../Assets/GalexSpaceImage.jpg";
+import spaceTheme from "../../Assets/GalexSpaceImage.jpg";
 
 const StarMap = () => {
   // A simple star map component with a space-themed background

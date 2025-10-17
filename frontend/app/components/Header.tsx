@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-slate-900/70 text-white shadow">
-      <Link to="/" className="text-lg font-bold">Constellation Connect</Link>
-
-
+    <header className="fixed top-0 left-0 w-full z-10 h-[10vh] flex items-center justify-between px-6 py-3 bg-slate-700/50 text-white ">
+      <Link to="/" className="text-2xl font-bold">Constellation Connect</Link>
     </header>
   );
 }

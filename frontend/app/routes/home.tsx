@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+// import { Welcome } from "../welcome/welcome";
 import StarMap from "../Components/StarMap";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
