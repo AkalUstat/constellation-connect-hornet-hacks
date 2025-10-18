@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 
 interface StarProps {
@@ -29,7 +30,7 @@ const Star: React.FC<StarProps> = ({
   // The star is absolutely positioned inside a relative container
   const [hovered, setHovered] = useState(false);
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   
   const glowBlur = hovered || highlighted ? Math.max(6, size) : Math.max(1, size / 2);
   const scale = hovered || highlighted ? 1.18 : 1;
 
