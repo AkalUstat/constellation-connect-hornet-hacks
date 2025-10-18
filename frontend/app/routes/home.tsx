@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 // import { Welcome } from "../welcome/welcome";
 import StarMap from "../Components/StarMap";
-// import ModalDemo from "../components/ModalDemo";
+import ModalDemo from "../Components/ModalDemo";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function meta(_args: Route.MetaArgs) {
@@ -13,6 +13,13 @@ export function meta(_args: Route.MetaArgs) {
 
 export default function Home() {
   return (
+    <>
       <StarMap />
+
+      <div className="absolute top-4 right-4 z-50">
+          <ModalDemo />
+      </div>
+    </>
+    
   );
 }
