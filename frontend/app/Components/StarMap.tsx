@@ -1,6 +1,8 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import spaceTheme from "../../Assets/GalexSpaceImage.jpg";
 import Star from "./Star"; // Importing the Star component
+import StarModal from "./StarModal";
+import clubs from "../../../clubs.json";
 
 const NUM_STARS = 60; // Number of stars to generate
 
@@ -25,6 +27,8 @@ const mulberry32 = (a: number) => { // seed
 
 const StarMap = ({ seed = "constellation-connect-v1" }: { seed?: string }) => {
   // Generate a stable list of random stars per render using a seeded RNG
+  const [selectedId, setSelectedId] = useState<number | null>(null);
+
   const stars = useMemo(() => {
     const arr = [] as {
       id: number;
@@ -69,13 +73,17 @@ const StarMap = ({ seed = "constellation-connect-v1" }: { seed?: string }) => {
       {stars.map((s) => (
         <Star
           key={s.id} // Unique key for each star
-          x={s.x} 
-          y={s.y} 
+          x={s.x}
+          y={s.y}
           size={s.size} // Size in px
           color={s.color} // Color of the star
-          onClick={() => alert(`Star ${s.id} clicked!`)} // Click handler switch to Modal later
+          onClick={() => setSelectedId(s.id)} // open modal
         />
       ))}
+
+      {selectedId !== null && (
+        <StarModal club={clubs[selectedId % clubs.length]} onClose={() => setSelectedId(null)} />
+      )}
     </div>
   );
 };
