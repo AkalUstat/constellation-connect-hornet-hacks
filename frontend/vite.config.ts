@@ -1,14 +1,20 @@
+// vite.config.ts
 // @ts-nocheck
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import eslintPlugin from 'vite-plugin-eslint';
+import tailwindcss from "@tailwindcss/vite";
+import eslintPlugin from "vite-plugin-eslint";
+import { reactRouter } from "@react-router/dev/vite";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(),  eslintPlugin()],
+  plugins: [
+    tailwindcss(),      // ✅ must come *before* reactRouter()
+    reactRouter(),      // ✅ react-router CLI plugin
+    tsconfigPaths(),
+    eslintPlugin(),
+  ],
   optimizeDeps: {
-    include: ["react", "react-dom","react-router", "react-router-dom"],
+    include: ["react", "react-dom", "react-router", "react-router-dom"],
     force: true,
   },
   resolve: {
@@ -16,7 +22,7 @@ export default defineConfig({
   },
   server: {
     watch: {
-      usePolling: true, // helps on macOS + FS cache issues
+      usePolling: true,
     },
   },
 });
