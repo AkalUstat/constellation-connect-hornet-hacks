@@ -7,11 +7,7 @@
 }
 
 @theme {
-  --color-solar-bg: #00010A;
   --color-solar-surface: rgba(251, 239, 218, 0.08);
-  --color-solar-panel: #3E2C1E;
-  --color-solar-amber: #FDE68A;
-  --color-solar-rose: #F9A8D4;
   --color-solar-highlight: #FFE9B1;
   --color-solar-glow: rgba(255, 192, 120, 0.2);
   --color-solar-line: rgba(249, 168, 212, 0.2);
