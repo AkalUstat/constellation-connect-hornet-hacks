@@ -14,11 +14,5 @@ export function meta(_args: Route.MetaArgs) {
 export default function Home() {
   return (
       <StarMap />
-
-    //   <div className="absolute top-4 right-4 z-50">
-    //       <ModalDemo />
-    //   </div>
-    // </>
-    
   );
 }
