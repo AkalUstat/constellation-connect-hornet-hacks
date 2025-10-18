@@ -2,409 +2,480 @@
   {
     "name": "Engineering & Computer Science Joint Council",
     "category": "Engineering & Computer Science Joint Council",
-    "related": [
-      "Order of the Engineer"
-    ],
+    "related": ["Order of the Engineer"],
     "discord": "https://discord.com/channels/1037749451365822524/1037749451852353646",
-    "president": "Aadil Bhat"
+    "president": "Aadil Bhat",
+    "members": 42,
+    "meeting_schedule": "Biweekly Tuesdays 6:00–7:00 PM, Riverside Hall 210",
+    "next_meetings": [
+      {"date": "2025-10-21", "time": "18:00", "location": "Riverside Hall 210"},
+      {"date": "2025-11-04", "time": "18:00", "location": "Riverside Hall 210"},
+      {"date": "2025-11-18", "time": "18:00", "location": "Riverside Hall 210"}
+    ]
   },
   {
     "name": "Order of the Engineer",
     "category": "Professional / Honor",
-    "related": [
-      "Engineering & Computer Science Joint Council"
-    ],
+    "related": ["Engineering & Computer Science Joint Council"],
     "discord": null,
-    "president": null
+    "president": null,
+    "members": 63
   },
   {
     "name": "American Concrete Institute",
     "category": "Civil Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Concrete Canoe Club"
-    ],
+    "related": ["American Society of Civil Engineers", "Concrete Canoe Club"],
     "discord": null,
-    "president": "Muna Mandoob"
+    "president": "Muna Mandoob",
+    "members": 51,
+    "meeting_schedule": "Thursdays 5:30–6:30 PM, Del Rio 132",
+    "next_meetings": [
+      {"date": "2025-10-23", "time": "17:30", "location": "Del Rio 132"},
+      {"date": "2025-10-30", "time": "17:30", "location": "Del Rio 132"},
+      {"date": "2025-11-06", "time": "17:30", "location": "Del Rio 132"}
+    ]
   },
   {
     "name": "American Society of Civil Engineers",
     "category": "Civil Engineering",
-    "related": [
-      "Concrete Canoe Club",
-      "Institute of Transportation Engineers"
-    ],
+    "related": ["Concrete Canoe Club", "Institute of Transportation Engineers"],
     "discord": null,
-    "president": "Rodaina Abdelhafiz"
+    "president": "Rodaina Abdelhafiz",
+    "members": 88,
+    "meeting_schedule": "Alt. Wednesdays 6:00–7:15 PM, Riverside Hall 118",
+    "next_meetings": [
+      {"date": "2025-10-29", "time": "18:00", "location": "Riverside Hall 118"},
+      {"date": "2025-11-12", "time": "18:00", "location": "Riverside Hall 118"},
+      {"date": "2025-11-26", "time": "18:00", "location": "Riverside Hall 118"}
+    ]
   },
   {
     "name": "Concrete Canoe Club",
     "category": "Civil Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "American Concrete Institute",
-      "American Society of Civil Engineers"
-    ],
+    "related": ["American Society of Civil Engineers", "American Concrete Institute", "American Society of Civil Engineers"],
     "discord": null,
-    "president": "Ryan Tan"
+    "president": "Ryan Tan",
+    "members": 37,
+    "meeting_schedule": "Saturdays 10:00 AM–12:00 PM, Structures Lab Yard",
+    "next_meetings": [
+      {"date": "2025-10-25", "time": "10:00", "location": "Structures Lab Yard"},
+      {"date": "2025-11-01", "time": "10:00", "location": "Structures Lab Yard"},
+      {"date": "2025-11-08", "time": "10:00", "location": "Structures Lab Yard"}
+    ]
   },
   {
     "name": "California Geotechnical Engineering Association",
     "category": "Civil Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Geo-Challenge"
-    ],
+    "related": ["American Society of Civil Engineers", "Geo-Challenge"],
     "discord": null,
-    "president": "Faith Tafoya"
+    "president": "Faith Tafoya",
+    "members": 29
   },
   {
     "name": "California Water Environment Association",
     "category": "Civil Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Water Treatment Club"
-    ],
+    "related": ["American Society of Civil Engineers", "Water Treatment Club"],
     "discord": null,
-    "president": "Kenneth Duenas"
+    "president": "Kenneth Duenas",
+    "members": 34,
+    "meeting_schedule": "Mondays 5:00–6:00 PM, Sierra 204",
+    "next_meetings": [
+      {"date": "2025-10-20", "time": "17:00", "location": "Sierra 204"},
+      {"date": "2025-10-27", "time": "17:00", "location": "Sierra 204"},
+      {"date": "2025-11-03", "time": "17:00", "location": "Sierra 204"}
+    ]
   },
   {
     "name": "Geo-Challenge",
     "category": "Civil / Geotechnical Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "California Geotechnical Engineering Association"
-    ],
+    "related": ["American Society of Civil Engineers", "California Geotechnical Engineering Association"],
     "discord": null,
-    "president": "Yuejiang Qu"
+    "president": "Yuejiang Qu",
+    "members": 22,
+    "next_meetings": [
+      {"date": "2025-10-24", "time": "16:00", "location": "Geotech Lab 101"},
+      {"date": "2025-11-07", "time": "16:00", "location": "Geotech Lab 101"}
+    ]
   },
   {
     "name": "Institute of Transportation Engineers",
     "category": "Civil / Transportation Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Transportation Challenge"
-    ],
+    "related": ["American Society of Civil Engineers", "Transportation Challenge"],
     "discord": null,
-    "president": "Geoffrey Tolentino"
+    "president": "Geoffrey Tolentino",
+    "members": 39,
+    "meeting_schedule": "Fridays 3:30–4:30 PM, Mariposa 120",
+    "next_meetings": [
+      {"date": "2025-10-24", "time": "15:30", "location": "Mariposa 120"},
+      {"date": "2025-11-07", "time": "15:30", "location": "Mariposa 120"},
+      {"date": "2025-11-21", "time": "15:30", "location": "Mariposa 120"}
+    ]
   },
   {
     "name": "Pre-cast Pre-Stressed Concrete Institute",
     "category": "Civil / Structural Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Structural Engineering Association of Central California"
-    ],
+    "related": ["American Society of Civil Engineers", "Structural Engineering Association of Central California"],
     "discord": null,
-    "president": "Crystal Mae Barlaan"
+    "president": "Crystal Mae Barlaan",
+    "members": 18
   },
   {
     "name": "Structural Engineering Association of Central California",
     "category": "Civil / Structural Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Pre-cast Pre-Stressed Concrete Institute"
-    ],
+    "related": ["American Society of Civil Engineers", "Pre-cast Pre-Stressed Concrete Institute"],
     "discord": null,
-    "president": "Yuliy Ludov"
+    "president": "Yuliy Ludov",
+    "members": 27,
+    "next_meetings": [
+      {"date": "2025-10-28", "time": "17:30", "location": "Riverside Hall 220"},
+      {"date": "2025-11-18", "time": "17:30", "location": "Riverside Hall 220"}
+    ]
   },
   {
     "name": "Transportation Challenge",
     "category": "Civil / Transportation Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "Institute of Transportation Engineers"
-    ],
+    "related": ["American Society of Civil Engineers", "Institute of Transportation Engineers"],
     "discord": null,
-    "president": "Helal Murad"
+    "president": "Helal Murad",
+    "members": 21
   },
   {
     "name": "Water Treatment Club",
     "category": "Civil / Environmental Engineering",
-    "related": [
-      "American Society of Civil Engineers",
-      "California Water Environment Association"
-    ],
+    "related": ["American Society of Civil Engineers", "California Water Environment Association"],
     "discord": null,
-    "president": "Kenneth Duenas"
+    "president": "Kenneth Duenas",
+    "members": 33,
+    "meeting_schedule": "Wednesdays 5:00–6:00 PM, Hydraulics Lab",
+    "next_meetings": [
+      {"date": "2025-10-22", "time": "17:00", "location": "Hydraulics Lab"},
+      {"date": "2025-10-29", "time": "17:00", "location": "Hydraulics Lab"},
+      {"date": "2025-11-05", "time": "17:00", "location": "Hydraulics Lab"}
+    ]
   },
   {
     "name": "Associated General Contractors",
     "category": "Construction Management",
-    "related": [
-      "Construction Management Association of America Student Chapter",
-      "Construction Management Student Association"
-    ],
+    "related": ["Construction Management Association of America Student Chapter", "Construction Management Student Association"],
     "discord": null,
-    "president": "Liz Rodriguez Topete"
+    "president": "Liz Rodriguez Topete",
+    "members": 44,
+    "meeting_schedule": "Alt. Thursdays 6:30–7:30 PM, Amador 101"
   },
   {
     "name": "Construction Management Association of America Student Chapter",
     "category": "Construction Management",
-    "related": [
-      "Associated General Contractors",
-      "Construction Management Student Association"
-    ],
+    "related": ["Associated General Contractors", "Construction Management Student Association"],
     "discord": null,
-    "president": "Jakob Miller"
+    "president": "Jakob Miller",
+    "members": 47,
+    "next_meetings": [
+      {"date": "2025-10-23", "time": "18:00", "location": "Amador 201"},
+      {"date": "2025-11-06", "time": "18:00", "location": "Amador 201"},
+      {"date": "2025-11-20", "time": "18:00", "location": "Amador 201"}
+    ]
   },
   {
     "name": "Construction Management Student Association",
     "category": "Construction Management",
-    "related": [
-      "Associated General Contractors",
-      "Construction Management Association of America Student Chapter",
-      "Mechanical Contractors Association of America",
-      "The Beavers",
-      "Women In Construction"
-    ],
+    "related": ["Associated General Contractors", "Construction Management Association of America Student Chapter", "Mechanical Contractors Association of America", "The Beavers", "Women In Construction"],
     "discord": null,
-    "president": "Fernando Gonzalez"
+    "president": "Fernando Gonzalez",
+    "members": 76,
+    "meeting_schedule": "Tuesdays 5:30–6:30 PM, Riverside Hall 105",
+    "next_meetings": [
+      {"date": "2025-10-21", "time": "17:30", "location": "Riverside Hall 105"},
+      {"date": "2025-10-28", "time": "17:30", "location": "Riverside Hall 105"},
+      {"date": "2025-11-04", "time": "17:30", "location": "Riverside Hall 105"}
+    ]
   },
   {
     "name": "Mechanical Contractors Association of America",
     "category": "Construction Management",
-    "related": [
-      "Construction Management Student Association",
-      "The Beavers"
-    ],
+    "related": ["Construction Management Student Association", "The Beavers"],
     "discord": null,
-    "president": "Tyler Jin"
+    "president": "Tyler Jin",
+    "members": 24
   },
   {
     "name": "The Beavers",
     "category": "Construction Management",
-    "related": [
-      "Construction Management Student Association",
-      "Mechanical Contractors Association of America"
-    ],
+    "related": ["Construction Management Student Association", "Mechanical Contractors Association of America"],
     "discord": null,
-    "president": "Dustin Garcia"
+    "president": "Dustin Garcia",
+    "members": 19,
+    "next_meetings": [
+      {"date": "2025-10-31", "time": "16:00", "location": "Amador 103"},
+      {"date": "2025-11-14", "time": "16:00", "location": "Amador 103"}
+    ]
   },
   {
     "name": "Women In Construction",
     "category": "Construction Management / Diversity",
-    "related": [
-      "Construction Management Association of America Student Chapter",
-      "Construction Management Student Association"
-    ],
+    "related": ["Construction Management Association of America Student Chapter", "Construction Management Student Association"],
     "discord": null,
-    "president": "Adriana Espinoza"
+    "president": "Adriana Espinoza",
+    "members": 41,
+    "meeting_schedule": "First Mondays 6:00–7:00 PM, Riverside Hall 214",
+    "next_meetings": [
+      {"date": "2025-11-03", "time": "18:00", "location": "Riverside Hall 214"},
+      {"date": "2025-12-01", "time": "18:00", "location": "Riverside Hall 214"}
+    ]
   },
   {
     "name": "Association for Computing Machinery",
     "category": "Computer Science",
-    "related": [
-      "Cyber Security Club",
-      "Data Structures and Algorithms"
-    ],
+    "related": ["Cyber Security Club", "Data Structures and Algorithms"],
     "discord": null,
-    "president": "Ajaydeep Singh"
+    "president": "Ajaydeep Singh",
+    "members": 112,
+    "meeting_schedule": "Wednesdays 6:00–7:30 PM, Union Ballroom B",
+    "next_meetings": [
+      {"date": "2025-10-22", "time": "18:00", "location": "Union Ballroom B"},
+      {"date": "2025-10-29", "time": "18:00", "location": "Union Ballroom B"},
+      {"date": "2025-11-05", "time": "18:00", "location": "Union Ballroom B"}
+    ]
   },
   {
     "name": "Cyber Security Club",
     "category": "Computer Science",
-    "related": [
-      "Association for Computing Machinery",
-      "Data Science Club",
-      "Data Structures and Algorithms"
-    ],
+    "related": ["Association for Computing Machinery", "Data Science Club", "Data Structures and Algorithms"],
     "discord": null,
-    "president": "Philip Colton"
+    "president": "Philip Colton",
+    "members": 73,
+    "meeting_schedule": "Fridays 5:30–7:00 PM, Riverside Hall 009 (Cyber Lab)",
+    "next_meetings": [
+      {"date": "2025-10-24", "time": "17:30", "location": "Riverside Hall 009"},
+      {"date": "2025-11-07", "time": "17:30", "location": "Riverside Hall 009"},
+      {"date": "2025-11-21", "time": "17:30", "location": "Riverside Hall 009"}
+    ]
   },
   {
     "name": "Data Structures and Algorithms",
     "category": "Computer Science",
-    "related": [
-      "Association for Computing Machinery",
-      "Cyber Security Club"
-    ],
+    "related": ["Association for Computing Machinery", "Cyber Security Club"],
     "discord": null,
-    "president": "Brayan Mejia Nunez"
+    "president": "Brayan Mejia Nunez",
+    "members": 58
   },
   {
     "name": "Girls Who Code",
     "category": "Computer Science / Diversity",
-    "related": [
-      "Association for Computing Machinery",
-      "Society of Women Engineers"
-    ],
+    "related": ["Association for Computing Machinery", "Society of Women Engineers"],
     "discord": null,
-    "president": "Salma Aboukhadra"
+    "president": "Salma Aboukhadra",
+    "members": 46,
+    "next_meetings": [
+      {"date": "2025-10-23", "time": "17:00", "location": "Riverside Hall 120"},
+      {"date": "2025-11-06", "time": "17:00", "location": "Riverside Hall 120"},
+      {"date": "2025-11-20", "time": "17:00", "location": "Riverside Hall 120"}
+    ]
   },
   {
     "name": "Video Game Design Club",
     "category": "Computer Science / Game Dev",
-    "related": [
-      "Association for Computing Machinery"
-    ],
+    "related": ["Association for Computing Machinery"],
     "discord": null,
-    "president": "Dylan Wright"
+    "president": "Dylan Wright",
+    "members": 67,
+    "meeting_schedule": "Tuesdays 7:00–9:00 PM, Union Games Room"
   },
   {
     "name": "Power and Energy Society",
     "category": "Electrical & Electronic Engineering",
-    "related": [
-      "American Society of Mechanical Engineers",
-      "Hornet Aerospace and Propulsion"
-    ],
+    "related": ["American Society of Mechanical Engineers", "Hornet Aerospace and Propulsion"],
     "discord": null,
-    "president": "Armaan Randhawa"
+    "president": "Armaan Randhawa",
+    "members": 36,
+    "next_meetings": [
+      {"date": "2025-10-27", "time": "18:00", "location": "Villard 202"},
+      {"date": "2025-11-10", "time": "18:00", "location": "Villard 202"},
+      {"date": "2025-11-24", "time": "18:00", "location": "Villard 202"}
+    ]
   },
   {
     "name": "American Society of Mechanical Engineers",
     "category": "Mechanical Engineering",
-    "related": [
-      "Hornet Racing - Formula SAE",
-      "Society of Manufacturing Engineers"
-    ],
+    "related": ["Hornet Racing - Formula SAE", "Society of Manufacturing Engineers"],
     "discord": null,
-    "president": "Stephanie Summers"
+    "president": "Stephanie Summers",
+    "members": 93,
+    "meeting_schedule": "Thursdays 6:00–7:15 PM, Riverside Hall 130",
+    "next_meetings": [
+      {"date": "2025-10-23", "time": "18:00", "location": "Riverside Hall 130"},
+      {"date": "2025-10-30", "time": "18:00", "location": "Riverside Hall 130"},
+      {"date": "2025-11-06", "time": "18:00", "location": "Riverside Hall 130"}
+    ]
   },
   {
     "name": "Forensic Engineering Club",
     "category": "Mechanical Engineering",
-    "related": [
-      "American Society of Mechanical Engineers"
-    ],
+    "related": ["American Society of Mechanical Engineers"],
     "discord": null,
-    "president": "Carissa Palasigue"
+    "president": "Carissa Palasigue",
+    "members": 25
   },
   {
     "name": "Hornet Aerospace and Propulsion",
     "category": "Mechanical / Aerospace",
-    "related": [
-      "Hornet Racing - Formula SAE",
-      "Power and Energy Society",
-      "Vertical Flight Society"
-    ],
+    "related": ["Hornet Racing - Formula SAE", "Power and Energy Society", "Vertical Flight Society"],
     "discord": null,
-    "president": "Devon Nelson"
+    "president": "Devon Nelson",
+    "members": 52,
+    "meeting_schedule": "Mondays 6:30–8:00 PM, Aero Lab",
+    "next_meetings": [
+      {"date": "2025-10-20", "time": "18:30", "location": "Aero Lab"},
+      {"date": "2025-10-27", "time": "18:30", "location": "Aero Lab"},
+      {"date": "2025-11-03", "time": "18:30", "location": "Aero Lab"}
+    ]
   },
   {
     "name": "Hornet Racing - Formula SAE",
     "category": "Mechanical / Motorsports",
-    "related": [
-      "American Society of Mechanical Engineers",
-      "Hornet Aerospace and Propulsion",
-      "Society of Manufacturing Engineers"
-    ],
+    "related": ["American Society of Mechanical Engineers", "Hornet Aerospace and Propulsion", "Society of Manufacturing Engineers"],
     "discord": null,
-    "president": "Nicolas Pfeifer"
+    "president": "Nicolas Pfeifer",
+    "members": 85,
+    "meeting_schedule": "Tuesdays & Thursdays 6:00–8:30 PM, Shop Bay A",
+    "next_meetings": [
+      {"date": "2025-10-21", "time": "18:00", "location": "Shop Bay A"},
+      {"date": "2025-10-23", "time": "18:00", "location": "Shop Bay A"},
+      {"date": "2025-10-28", "time": "18:00", "location": "Shop Bay A"}
+    ]
   },
   {
     "name": "Material Advantage Club",
     "category": "Mechanical / Materials",
-    "related": [
-      "American Society of Mechanical Engineers",
-      "Society of Manufacturing Engineers"
-    ],
+    "related": ["American Society of Mechanical Engineers", "Society of Manufacturing Engineers"],
     "discord": "discord.gg/54rCnh36ED",
-    "president": "Luis Guillermo Serrano"
+    "president": "Luis Guillermo Serrano",
+    "members": 31,
+    "next_meetings": [
+      {"date": "2025-10-30", "time": "17:00", "location": "Materials Lab 201"},
+      {"date": "2025-11-13", "time": "17:00", "location": "Materials Lab 201"}
+    ]
   },
   {
     "name": "Society of Manufacturing Engineers",
     "category": "Mechanical Engineering",
-    "related": [
-      "American Society of Mechanical Engineers",
-      "Hornet Racing - Formula SAE",
-      "Material Advantage Club"
-    ],
+    "related": ["American Society of Mechanical Engineers", "Hornet Racing - Formula SAE", "Material Advantage Club"],
     "discord": null,
-    "president": "Aidan Coyle"
+    "president": "Aidan Coyle",
+    "members": 57
   },
   {
     "name": "Vertical Flight Society",
     "category": "Mechanical / Aerospace",
-    "related": [
-      "Hornet Aerospace and Propulsion"
-    ],
+    "related": ["Hornet Aerospace and Propulsion"],
     "discord": null,
-    "president": "Ryan Younger"
+    "president": "Ryan Younger",
+    "members": 28,
+    "meeting_schedule": "Fridays 4:00–5:00 PM, Aero Lab Briefing Room",
+    "next_meetings": [
+      {"date": "2025-10-24", "time": "16:00", "location": "Aero Lab Briefing Room"},
+      {"date": "2025-11-07", "time": "16:00", "location": "Aero Lab Briefing Room"},
+      {"date": "2025-11-21", "time": "16:00", "location": "Aero Lab Briefing Room"}
+    ]
   },
   {
     "name": "Competitive Robotics Club",
     "category": "Cross-Discipline (EE/ME/CS)",
-    "related": [
-      "Association for Computing Machinery",
-      "American Society of Mechanical Engineers"
-    ],
+    "related": ["Association for Computing Machinery", "American Society of Mechanical Engineers"],
     "discord": null,
-    "president": "Kendra Mohle"
+    "president": "Kendra Mohle",
+    "members": 62,
+    "meeting_schedule": "Wednesdays 7:00–9:00 PM, Robotics Lab",
+    "next_meetings": [
+      {"date": "2025-10-22", "time": "19:00", "location": "Robotics Lab"},
+      {"date": "2025-10-29", "time": "19:00", "location": "Robotics Lab"},
+      {"date": "2025-11-05", "time": "19:00", "location": "Robotics Lab"}
+    ]
   },
   {
     "name": "Data Science Club",
     "category": "Cross-Discipline (Data Science)",
-    "related": [
-      "Association for Computing Machinery",
-      "Cyber Security Club"
-    ],
+    "related": ["Association for Computing Machinery", "Cyber Security Club"],
     "discord": null,
-    "president": "Umang Vadhar"
+    "president": "Umang Vadhar",
+    "members": 71,
+    "next_meetings": [
+      {"date": "2025-10-27", "time": "17:30", "location": "Riverside Hall 115"},
+      {"date": "2025-11-03", "time": "17:30", "location": "Riverside Hall 115"},
+      {"date": "2025-11-17", "time": "17:30", "location": "Riverside Hall 115"}
+    ]
   },
   {
     "name": "Engineers Without Borders",
     "category": "Cross-Discipline / Service",
-    "related": [
-      "American Society of Civil Engineers",
-      "Society of Women Engineers"
-    ],
+    "related": ["American Society of Civil Engineers", "Society of Women Engineers"],
     "discord": null,
-    "president": "Corey Theiss"
+    "president": "Corey Theiss",
+    "members": 54,
+    "meeting_schedule": "Alt. Mondays 6:00–7:00 PM, Mariposa 210",
+    "next_meetings": [
+      {"date": "2025-10-27", "time": "18:00", "location": "Mariposa 210"},
+      {"date": "2025-11-10", "time": "18:00", "location": "Mariposa 210"},
+      {"date": "2025-11-24", "time": "18:00", "location": "Mariposa 210"}
+    ]
   },
   {
     "name": "National Society of Black Engineers",
     "category": "STEM Diversity",
-    "related": [
-      "Society of Asian Scientists and Engineers",
-      "Society of Hispanic Professional Engineers",
-      "Society of Women Engineers"
-    ],
+    "related": ["Society of Asian Scientists and Engineers", "Society of Hispanic Professional Engineers", "Society of Women Engineers"],
     "discord": null,
-    "president": "Aminata Fall"
+    "president": "Aminata Fall",
+    "members": 49,
+    "next_meetings": [
+      {"date": "2025-10-23", "time": "18:30", "location": "Union Cypress"},
+      {"date": "2025-11-06", "time": "18:30", "location": "Union Cypress"}
+    ]
   },
   {
     "name": "Society of Asian Scientists and Engineers",
     "category": "STEM Diversity",
-    "related": [
-      "National Society of Black Engineers",
-      "Society of Hispanic Professional Engineers",
-      "Society of Women Engineers"
-    ],
+    "related": ["National Society of Black Engineers", "Society of Hispanic Professional Engineers", "Society of Women Engineers"],
     "discord": null,
-    "president": "Ralion Luperte"
+    "president": "Ralion Luperte",
+    "members": 64,
+    "meeting_schedule": "Thursdays 6:30–7:30 PM, Union Terrace"
   },
   {
     "name": "Society of Hispanic Professional Engineers",
     "category": "STEM Diversity",
-    "related": [
-      "National Society of Black Engineers",
-      "Society of Asian Scientists and Engineers",
-      "Society of Women Engineers"
-    ],
+    "related": ["National Society of Black Engineers", "Society of Asian Scientists and Engineers", "Society of Women Engineers"],
     "discord": null,
-    "president": "Josue S. Garcia"
+    "president": "Josue S. Garcia",
+    "members": 97,
+    "next_meetings": [
+      {"date": "2025-10-24", "time": "18:00", "location": "Riverside Hall 200"},
+      {"date": "2025-11-08", "time": "10:00", "location": "Riverside Hall 200"},
+      {"date": "2025-11-22", "time": "10:00", "location": "Riverside Hall 200"}
+    ]
   },
   {
     "name": "Society of Women Engineers",
     "category": "STEM Diversity",
-    "related": [
-      "Girls Who Code",
-      "National Society of Black Engineers",
-      "Society of Asian Scientists and Engineers",
-      "Society of Hispanic Professional Engineers"
-    ],
+    "related": ["Girls Who Code", "National Society of Black Engineers", "Society of Asian Scientists and Engineers", "Society of Hispanic Professional Engineers"],
     "discord": null,
-    "president": "Keerat Khandpur"
+    "president": "Ankita Patwal",
+    "members": 108,
+    "meeting_schedule": "Wednesdays 5:30–6:45 PM, Union Orchard Suite",
+    "next_meetings": [
+      {"date": "2025-10-22", "time": "17:30", "location": "Union Orchard Suite"},
+      {"date": "2025-10-29", "time": "17:30", "location": "Union Orchard Suite"},
+      {"date": "2025-11-05", "time": "17:30", "location": "Union Orchard Suite"}
+    ]
   },
   {
     "name": "Tau Beta Pi",
     "category": "Engineering Honor Society",
-    "related": [
-      "Association for Computing Machinery",
-      "American Society of Mechanical Engineers"
-    ],
+    "related": ["Association for Computing Machinery", "American Society of Mechanical Engineers"],
     "discord": null,
-    "president": "Alex Lindstrom"
+    "president": "Alex Lindstrom",
+    "members": 52,
+    "next_meetings": [
+      {"date": "2025-10-28", "time": "18:00", "location": "Riverside Hall 225"},
+      {"date": "2025-11-12", "time": "18:00", "location": "Riverside Hall 225"}
+    ]
   }
 ]
