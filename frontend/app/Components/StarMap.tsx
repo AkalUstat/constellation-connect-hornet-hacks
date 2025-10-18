@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import spaceTheme from "../../Assets/GalexSpaceImage.jpg";
 import Star from "./Star";
 import StarModal from "./StarModal";
-import clubs from "../../../clubs.json";
+import clubs from "../data/clubs.json";
 
 const NUM_STARS = 400;
 const DRAG_THRESHOLD = 5;
