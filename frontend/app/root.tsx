@@ -3,14 +3,12 @@ import {
   Links,
   Meta,
   Outlet,
-  Scripts
+  Scripts,
 } from "react-router";
-
 import type { Route } from "./+types/root";
-import Header from "./Components/Header";
 
+import Header from "./Components/Header";
 import Sidebar from "./Sidebar/Sidebar";
-// import Sidebar from "./Sidebar/Sidebar";
 
 const linksArray = [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,15 +23,16 @@ const linksArray = [
   },
 ];
 
-
-// use normal import in dev
+// Use normal import in dev
 if (import.meta.env.DEV) {
   import("./index.css");
 } else {
   try {
-    // future build-compatible pattern
     const stylesheet = await import("./index.css");
-    linksArray.push({ rel: "stylesheet", href: stylesheet.default as unknown as string });
+    linksArray.push({
+      rel: "stylesheet",
+      href: stylesheet.default as unknown as string,
+    });
   } catch {
     // fallback
   }
@@ -50,12 +49,28 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="flex flex-col h-screen w-screen overflow-hidden">
-        <Header />
-        <div className="flex-9 flex flex-row w-screen overflow-hidden">
-          <Sidebar />
-          {children}
+
+      {/* 🌌 App layout */}
+      <body className="relative flex flex-col h-screen w-screen overflow-hidden bg-[var(--color-solar-bg)] text-[var(--color-solar-text)]">
+        {/* 🌠 StarMap renders behind everything */}
+        <div className="absolute inset-0 -z-10">
+          {children /* StarMap or page background lives here */}
         </div>
+
+        {/* 🪐 Foreground UI */}
+        <Header />
+
+        {/* 📄 Main content layer */}
+        <div
+          className="relative flex flex-row flex-1 w-full overflow-hidden z-10"
+          style={{
+            paddingTop: "calc(var(--header-margin-top) + var(--header-height))",
+          }}
+        >
+          <Sidebar />
+          <Outlet />
+        </div>
+
         <Scripts />
       </body>
     </html>

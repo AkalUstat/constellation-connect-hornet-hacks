@@ -19,6 +19,12 @@
   --color-solar-text-secondary: rgba(255, 255, 255, 0.7);
 }
 
+:root {
+  --header-height: 8vh;
+  --header-margin-top: 2vh; /* gap from top of screen */
+}
+
+
 html,
 body {
   @apply bg-white dark:bg-gray-950;

@@ -26,29 +26,26 @@ const mulberry32 = (a: number) => { // seed
 };
 
 const StarMap = ({ seed = "constellation-connect-v1" }: { seed?: string }) => {
-  // Generate a stable list of random stars per render using a seeded RNG
   const [selectedId, setSelectedId] = useState<number | null>(null);
 
   const stars = useMemo(() => {
-    const arr = [] as {
+    const arr: {
       id: number;
       x: number;
       y: number;
-      size: number; // in px
-      color: string; // color of the star
-    }[];
+      size: number;
+      color: string;
+    }[] = [];
 
-    const seedNum = stringToSeed(seed); // Convert seed string to number
+    const seedNum = stringToSeed(seed);
     const rand = mulberry32(seedNum);
+    const randBetween = (min: number, max: number) => rand() * (max - min) + min;
 
-    const randBetween = (min: number, max: number) => rand() * (max - min) + min; // inclusive min, exclusive max
-
-    for (let i = 0; i < NUM_STARS; i++) { // Generate each star
+    for (let i = 0; i < NUM_STARS; i++) {
       const colorRoll = rand();
-
       arr.push({
         id: i,
-        x: randBetween(3, 97), // leave a small margin
+        x: randBetween(3, 97),
         y: randBetween(3, 97),
         size: Math.round(randBetween(2, 8)),
         color: colorRoll > 0.98 ? "#c9f" : colorRoll > 0.96 ? "#9cf" : "#fff9c4",
@@ -63,29 +60,37 @@ const StarMap = ({ seed = "constellation-connect-v1" }: { seed?: string }) => {
         backgroundImage: `url(${spaceTheme})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
+        position: "fixed",   // ✅ make it full-screen wallpaper
+        top: 0,
+        left: 0,
         width: "100vw",
-        position: "relative", // necessary for absolutely positioned stars
+        height: "100vh",
         overflow: "hidden",
+        zIndex: -10,         // ✅ behind everything
       }}
     >
-      {/* Render many stars spread across the map */}
+      {/* ⭐ Stars */}
       {stars.map((s) => (
         <Star
-          key={s.id} // Unique key for each star
+          key={s.id}
           x={s.x}
           y={s.y}
-          size={s.size} // Size in px
-          color={s.color} // Color of the star
-          onClick={() => setSelectedId(s.id)} // open modal
+          size={s.size}
+          color={s.color}
+          onClick={() => setSelectedId(s.id)}
         />
       ))}
 
+      {/* 🌟 Modal (still on top) */}
       {selectedId !== null && (
-        <StarModal club={clubs[selectedId % clubs.length]} onClose={() => setSelectedId(null)} />
+        <StarModal
+          club={clubs[selectedId % clubs.length]}
+          onClose={() => setSelectedId(null)}
+        />
       )}
     </div>
   );
 };
+
 
 export default StarMap; // Exporting the StarMap component

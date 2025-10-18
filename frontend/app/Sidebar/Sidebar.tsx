@@ -11,15 +11,16 @@ const Sidebar = () => {
   return (
   <>
       {/* 🌌 Sidebar Panel */}
-      <div
-        className={`fixed flex flex-col min-h-[80%] max-h-[80%] mt-[2vh]
-        w-[25vw] rounded-xl backdrop-blur-md
-        
-        bg-[color:theme('colors.solar.surface')]
-        border border-[color:theme('colors.solar.line')]
-        shadow-glow overflow-hidden transition-all duration-300 ease-in-out
-        ${isOpen ? 'translate-x-5 opacity-100' : '-translate-x-full opacity-0'}`}
-      >
+<div
+  className={`fixed z-40 flex flex-col min-h-[80%] max-h-[80%]
+  w-[25vw] rounded-xl backdrop-blur-md
+  bg-[var(--color-solar-surface)]
+  border border-[var(--color-solar-line)]
+  shadow-glow overflow-hidden transition-all duration-300 ease-in-out
+  top-[calc(var(--header-margin-top)+var(--header-height)+1vh)]
+  ${isOpen ? 'translate-x-5 opacity-100' : '-translate-x-full opacity-0'}`}
+>
+
         <div className="flex-1 p-4 overflow-y-auto">
           {/* 🔍 Input */}
           <input
@@ -49,23 +50,23 @@ const Sidebar = () => {
       </div>
 
       {/* 🧭 Toggle Button (always visible) */}
-      <button
-        onClick={toggleSidebar}
-        className={`fixed top-[calc(10vh+25px)]
-        z-50 w-10 h-10 right-[-calc(10vw+25)] flex items-center justify-center rounded-full
-        backdrop-blur-md
-        bg-[color:theme('colors.solar.surface')]
-        border border-[color:theme('colors.solar.line')]
-        hover:bg-[color:theme('colors.solar.glow')]
-        hover:shadow-glow-soft active:scale-95 transition-all duration-300
-        ${isOpen ? 'left-[calc(25vw+1rem)]' : 'left-5'}`}
-      >
-        <IoFilterSharp
-          className="text-xl text-[color:theme('colors.solar.amber')]
-          transition-transform duration-300
-          ${isOpen ? 'rotate-90' : 'rotate-0'}"
-        />
-      </button>
+   <button
+  onClick={toggleSidebar}
+  className={`fixed z-50 w-10 h-10 flex items-center justify-center rounded-full
+  backdrop-blur-md border border-[var(--color-solar-line)]
+  bg-[var(--color-solar-surface)]
+  hover:bg-[var(--color-solar-glow)] hover:shadow-glow-soft active:scale-95
+  transition-all duration-300
+  top-[calc(var(--header-margin-top)+var(--header-height)+2vh)]
+  ${isOpen ? 'left-[calc(25vw+1rem)]' : 'left-5'}`}
+>
+  <IoFilterSharp
+    className={`text-xl text-[var(--color-solar-amber)]
+    transition-transform duration-300
+    ${isOpen ? 'rotate-90' : 'rotate-0'}`}
+  />
+</button>
+
     </>
   );
 };

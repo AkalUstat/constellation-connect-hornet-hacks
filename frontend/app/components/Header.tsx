@@ -3,20 +3,24 @@
 // If you're using plain React Router v6/7 data routers, use:
 // 
 
+// app/components/Header.tsx
 export default function Header() {
   return (
-    <div
-        className={
-        `flex flex-col my-[2vh] mx-[4vh] min-h-[10%] max-h-[10%]
-        rounded-xl backdrop-blur-md z-50 justify-center-safe
-        bg-[color:theme('colors.solar.surface')]
-        border border-[color:theme('colors.solar.line')]
-        shadow-glow overflow-hidden transition-all duration-300 ease-in-out
-        `}
-      >
-        <div className="flex flex-row self-center">
-        <p className="text-lg font-bold">Constellation Connect</p>
-        </div>
-      </div>
+    <header
+      className={`
+        relative z-50 flex items-center justify-center
+        my-[var(--header-margin-top)] mx-[4vw]
+        h-[var(--header-height)]
+        rounded-xl backdrop-blur-md
+        bg-[var(--color-solar-surface)]
+        border border-[var(--color-solar-line)]
+        shadow-glow transition-all duration-300 ease-in-out
+      `}
+    >
+      <p className="text-lg font-bold text-[var(--color-solar-amber)]">
+        Constellation Connect
+      </p>
+    </header>
   );
 }
+
