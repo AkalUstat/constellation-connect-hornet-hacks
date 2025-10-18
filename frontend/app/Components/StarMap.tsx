@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import spaceTheme from "../../Assets/GalexSpaceImage.jpg";
 import Star from "./Star"; // Importing the Star component
 import StarModal from "./StarModal";
-import clubs from "../../../clubs.json";
+import clubs from "../data/clubs.json";
 
 const NUM_STARS = 60; // Number of stars to generate
 
