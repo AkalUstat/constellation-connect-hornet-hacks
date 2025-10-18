@@ -9,32 +9,64 @@ const Sidebar = () => {
   };
 
   return (
- <div
-      className={`fixed flex flex-col min-h-[80%] max-h-[80%] mt-[2vh] rounded-[20px] bg-blue-500/20 ring-1 ring-blue-300/40 shadow-[0_0_40px_4px_rgba(99,102,241,0.35)] hover:bg-blue-500/30  active:scale-95 transition-all duration-300 ease-in-out w-[25vw] ${
-        isOpen ? 'translate-x-5' : '-translate-x-full '
-
-      }`}
-    >
-      <button
-        onClick={toggleSidebar}
-        className="absolute top-[15px] right-[-60px] border-none cursor-pointer rounded-r-[5px]  ring-blue-300/40  bg-blue-500/20  shadow-[0_0_40px_4px_rgba(99,102,241,0.35)] hover:bg-blue-500/30  active:scale-95 z-50"
+  <>
+      {/* 🌌 Sidebar Panel */}
+      <div
+        className={`fixed flex flex-col min-h-[80%] max-h-[80%] mt-[2vh]
+        w-[25vw] rounded-xl backdrop-blur-md
+        
+        bg-[color:theme('colors.solar.surface')]
+        border border-[color:theme('colors.solar.line')]
+        shadow-glow overflow-hidden transition-all duration-300 ease-in-out
+        ${isOpen ? 'translate-x-5 opacity-100' : '-translate-x-full opacity-0'}`}
       >
-        <IoFilterSharp color='white' className='text-3xl'/>
-      </button>
-      <div className={`p-[15px] flex-1 ${isOpen ? 'flex flex-col m-h-[100%] h-full w-full overflow-y-scroll overflow-x-hidden' : 'hidden'}`}>
-        <input className="m-[2vh] p-[2vh] w-full bg-slate-300 rounded-[20px] m-h-[3rem] h-[3rem] text-gray-500 self-center"/>
-        <div className="m-[2vh] p-[2vh] w-full bg-slate-300 rounded-[20px] m-h-[3rem] text-gray-500 self-center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut blandit justo. Donec congue mattis metus quis convallis. Mauris vel imperdiet massa, sed pulvinar ligula. Suspendisse potenti. Ut faucibus finibus lacus non porttitor. Nullam sed felis et erat fermentum molestie suscipit id nulla. Mauris tincidunt tellus ut ornare luctus. Proin eget pharetra est, in ultrices nulla. Vestibulum nec viverra neque, nec tincidunt velit. Duis vestibulum eleifend lacus, vitae aliquam mi ultricies eget. Donec felis enim, ultrices et orci sed, fermentum accumsan diam. In gravida augue non neque lacinia, quis maximus orci interdum.
+        <div className="flex-1 p-4 overflow-y-auto">
+          {/* 🔍 Input */}
+          <input
+            placeholder="Search..."
+            className="w-full h-12 mb-4 px-4 rounded-lg
+            text-[color:theme('colors.solar.text.DEFAULT')]
+            placeholder:text-[color:theme('colors.solar.text.secondary')]
+            bg-[color:theme('colors.solar.surface')]
+            border border-[color:theme('colors.solar.line')]
+            focus:ring-2 focus:ring-[color:theme('colors.solar.rose')]
+            outline-none transition-all duration-300"
+          />
 
-Sed sit amet elementum nisi, at tristique nulla. Nam vel justo vel libero mollis sodales vitae id velit. Maecenas nisl metus, porta quis elementum in, scelerisque sit amet augue. Proin tempus tellus id pretium congue. Quisque nec auctor nisl. Phasellus lacinia ipsum mi, efficitur sodales metus vulputate at. Aenean consequat tincidunt sem vel suscipit. Donec vehicula ligula ipsum, ac lacinia turpis dictum a. Ut fermentum neque nec leo blandit, sit amet volutpat mauris pellentesque. Integer commodo placerat quam, vitae malesuada orci molestie eu. Aenean pretium, tortor iaculis suscipit mattis, nisl leo maximus sapien, vitae viverra tortor lacus eu nisi. Cras ullamcorper congue leo.
-
-
+          {/* 📄 Content Card */}
+          <div
+            className="p-4 rounded-lg border
+            border-[color:theme('colors.solar.line')]
+            bg-[color:theme('colors.solar.surface')]
+            text-[color:theme('colors.solar.text.secondary')]
+            text-sm leading-relaxed shadow-glow-soft"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ut blandit justo. Donec congue mattis metus quis convallis. Mauris
+            vel imperdiet massa, sed pulvinar ligula. Suspendisse potenti.
           </div>
+        </div>
       </div>
 
-      
-
-    </div> 
+      {/* 🧭 Toggle Button (always visible) */}
+      <button
+        onClick={toggleSidebar}
+        className={`fixed top-[calc(10vh+25px)]
+        z-50 w-10 h-10 right-[-calc(10vw+25)] flex items-center justify-center rounded-full
+        backdrop-blur-md
+        bg-[color:theme('colors.solar.surface')]
+        border border-[color:theme('colors.solar.line')]
+        hover:bg-[color:theme('colors.solar.glow')]
+        hover:shadow-glow-soft active:scale-95 transition-all duration-300
+        ${isOpen ? 'left-[calc(25vw+1rem)]' : 'left-5'}`}
+      >
+        <IoFilterSharp
+          className="text-xl text-[color:theme('colors.solar.amber')]
+          transition-transform duration-300
+          ${isOpen ? 'rotate-90' : 'rotate-0'}"
+        />
+      </button>
+    </>
   );
 };
 

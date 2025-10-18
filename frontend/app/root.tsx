@@ -9,11 +9,10 @@ import {
 import type { Route } from "./+types/root";
 import Header from "./Components/Header";
 
-import "./app.css";
 import Sidebar from "./Sidebar/Sidebar";
 // import Sidebar from "./Sidebar/Sidebar";
 
-export const links: Route.LinksFunction = () => [
+const linksArray = [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -22,9 +21,25 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
   },
 ];
+
+
+// use normal import in dev
+if (import.meta.env.DEV) {
+  import("./index.css");
+} else {
+  try {
+    // future build-compatible pattern
+    const stylesheet = await import("./index.css");
+    linksArray.push({ rel: "stylesheet", href: stylesheet.default as unknown as string });
+  } catch {
+    // fallback
+  }
+}
+
+export const links: Route.LinksFunction = () => linksArray as any;
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -36,16 +51,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="flex flex-col h-screen w-screen overflow-hidden">
-        <Header/>
+        <Header />
         <div className="flex-9 flex flex-row w-screen overflow-hidden">
           <Sidebar />
           {children}
         </div>
-        {/* <ScrollRestoration /> */}
-<div>
-
-</div>
-
         <Scripts />
       </body>
     </html>
