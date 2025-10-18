@@ -280,7 +280,7 @@ export default function StarMap({ seed = "constellation-connect-v3" }: { seed?: 
       >
         {/* 🌠 Stars */}
         {stars.map((s) => {
-          const clubIndex = starIndexToClubIndex.get(s.id);
+          // const clubIndex = starIndexToClubIndex.get(s.id);
           const isHighlighted = constellationStarSet.has(s.id);
           return (
             <Star
