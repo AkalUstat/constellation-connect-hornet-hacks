@@ -82,7 +82,7 @@ export default function StarMap({ seed = "constellation-connect-v1" }: { seed?: 
     return arr;
   }, [seed]);
 
-  // 🖱️ Pan + inertia
+  // 🖱️ Drag-to-pan with inertia
   useEffect(() => {
     const onMouseDown = (e: MouseEvent) => {
       dragging.current = true;
@@ -153,6 +153,7 @@ export default function StarMap({ seed = "constellation-connect-v1" }: { seed?: 
     });
   };
 
+  // 🔁 Reset View Button
   const resetView = () => {
     const steps = 20;
     const stepTime = 10;
@@ -198,7 +199,7 @@ export default function StarMap({ seed = "constellation-connect-v1" }: { seed?: 
             key={s.id}
             x={s.x}
             y={s.y}
-            size={Math.max(s.size * scale, 4)}
+            size={Math.max(s.size * scale, 10)}
             color={s.color}
             onClick={() => {
               if (!mouseMoved.current) setSelectedId(s.id);
@@ -222,7 +223,7 @@ export default function StarMap({ seed = "constellation-connect-v1" }: { seed?: 
       {hasMoved && (
         <button
           onClick={resetView}
-          className="fixed bottom-4 right-4 z-50 px-4 py-2 rounded-md bg-white/10 text-white border border-white/20 shadow hover:bg-white/20 transition"
+          className="fixed bottom-4 left-4 z-50 px-4 py-2 rounded-md bg-white/10 text-white border border-white/20 shadow hover:bg-white/20 transition"
         >
           Reset View
         </button>
