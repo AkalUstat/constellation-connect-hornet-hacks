@@ -223,7 +223,10 @@ export default function StarMap({ seed = "constellation-connect-v1" }: { seed?: 
       {hasMoved && (
         <button
           onClick={resetView}
-          className="fixed bottom-4 left-4 z-50 px-4 py-2 rounded-md bg-white/10 text-white border border-white/20 shadow hover:bg-white/20 transition"
+          className="fixed bottom-4 left-4 z-50 px-4 py-2 rounded-[20px] border border-[var(--color-solar-line)]
+  hover:shadow-glow-soft 
+  duration-300
+  bg-indigo-500/20 ring-1 ring-indigo-300/40 backdrop-blur-md shadow-[0_0_20px_5px_rgba(99,102,241,0.35)] hover:bg-indigo-500/30 hover:shadow-[0_0_10px_5px_rgba(99,102,241,0.45)] active:scale-95 transition-all"
         >
           Reset View
         </button>
