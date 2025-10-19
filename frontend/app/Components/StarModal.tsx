@@ -18,7 +18,8 @@ const overlayStyle: React.CSSProperties = {
   top: 0,
   right: 0,
   bottom: 0,
-  background: "radial-gradient(ellipse at center, rgba(10,12,20,0.6), rgba(0,0,0,0.85))",
+  background:
+    "radial-gradient(ellipse at center, rgba(10,12,20,0.6), rgba(0,0,0,0.85))",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -26,20 +27,7 @@ const overlayStyle: React.CSSProperties = {
   backdropFilter: "blur(4px)",
 };
 
-const modalStyle: React.CSSProperties = {
-  background: "linear-gradient(180deg, rgba(6,10,20,0.95), rgba(10,14,26,0.98))",
-  color: "#f8fafc",
-  borderRadius: 14,
-  padding: 20,
-  maxWidth: 560,
-  width: "92%",
-  boxShadow: "0 20px 60px rgba(2,6,23,0.7), 0 0 30px rgba(137, 156, 255, 0.04)",
-  border: "1px solid rgba(255,255,255,0.04)",
-  position: "relative",
-  overflow: "hidden",
-};
-
-const buttonPrimary: React.CSSProperties = { 
+const buttonPrimary: React.CSSProperties = {
   padding: "8px 12px",
   background: "linear-gradient(90deg,#6474ff,#9cf)",
   color: "#041124",
@@ -82,13 +70,12 @@ export default function StarModal({
       role="dialog"
       aria-modal="true"
       onMouseDown={(e) => {
-        // close when clicking outside modal content
         if (e.target === e.currentTarget) onClose();
       }}
     >
       <motion.div
         ref={nodeRef}
-        style={modalStyle}
+        className="bg-gradient-to-br from-indigo-400/40 via-indigo-500/30 to-purple-600/20 ring-2 ring-indigo-400/60 shadow-[0_0_20px_5px_rgba(99,102,241,0.5)] rounded-2xl text-slate-50 p-6 max-w-lg w-[92%] relative overflow-hidden"
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 8, scale: 0.98 }}
@@ -125,24 +112,23 @@ export default function StarModal({
           >
             <div style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
               <div style={{ width: 12, height: 12, marginTop: 6 }} aria-hidden>
-                <div
-                  style={{
-                    width: 12,
-                    height: 12,
-                    borderRadius: 8,
-                    background: "radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,0.6) 30%, transparent 60%), #9cf",
-                    boxShadow: "0 0 12px rgba(156,204,255,0.6)",
-                  }}
-                />
+                <div className="w-3 h-3 rounded-full bg-indigo-300 shadow-[0_0_12px_rgba(156,204,255,0.6)]" />
               </div>
 
               <div style={{ flex: 1 }}>
                 <h2 style={{ margin: 0, fontSize: 20 }}>{club.name}</h2>
-                <div style={{ color: "#9fb4ff", marginTop: 6 }}>{club.category ?? "No category"}</div>
+                <div style={{ color: "#9fb4ff", marginTop: 6 }}>
+                  {club.category ?? "No category"}
+                </div>
 
                 <div style={{ display: "flex", gap: 12, marginTop: 12 }}>
                   {club.discord ? (
-                    <a href={club.discord} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                    <a
+                      href={club.discord}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
                       <button style={buttonPrimary}>Open Discord</button>
                     </a>
                   ) : (
@@ -179,7 +165,8 @@ export default function StarModal({
                       <ul style={{ marginTop: 8 }}>
                         {club.next_meetings.map((m, idx) => (
                           <li key={idx} style={{ color: "#cbd5e1" }}>
-                            {m.date} {m.time ? `· ${m.time}` : ""} {m.location ? `· ${m.location}` : ""}
+                            {m.date} {m.time ? `· ${m.time}` : ""}{" "}
+                            {m.location ? `· ${m.location}` : ""}
                           </li>
                         ))}
                       </ul>
@@ -203,7 +190,7 @@ export default function StarModal({
             </div>
           </motion.div>
         </AnimatePresence>
-        </motion.div>
+      </motion.div>
     </div>
   );
 }

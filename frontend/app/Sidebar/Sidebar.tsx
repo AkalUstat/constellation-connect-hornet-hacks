@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoFilterSharp } from "react-icons/io5";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +12,22 @@ const Sidebar = () => {
   return (
   <>
       {/* 🌌 Sidebar Panel */}
-<div
-  className={`fixed z-40 flex flex-col min-h-[80%] max-h-[80%]
-  w-[25vw] rounded-xl backdrop-blur-md
-  bg-[var(--color-solar-surface)]
-  border border-[var(--color-solar-line)]
-  shadow-glow overflow-hidden transition-all duration-300 ease-in-out
-  top-[calc(var(--header-margin-top)+var(--header-height)+1vh)]
-  ${isOpen ? 'translate-x-5 opacity-100' : '-translate-x-full opacity-0'}`}
->
+      <AnimatePresence>
+  {isOpen && (
+    <motion.div
+      key="animated-panel"
+      initial={{ scale: 0.8, opacity: 0, x: -100 }}
+      animate={{ scale: 1, opacity: 1, x: 10 }}
+      exit={{ scale: 0.9, opacity: 0, x: -100 }}
+      transition={{ type: "spring", stiffness: 220, damping: 18 }}
+      className="fixed z-40 flex flex-col min-h-[80%] max-h-[80%]
+                 w-[25vw] rounded-3xl backdrop-blur-md
+                 border overflow-hidden
+                 top-[calc(var(--header-margin-top)+var(--header-height)+3vh)]
+                 bg-gradient-to-br from-indigo-400/40 via-indigo-500/30 to-purple-600/20 
+                 ring-2 ring-indigo-400/60 
+                 shadow-[0_0_20px_5px_rgba(99,102,241,0.5)]"
+    >
 
         <div className="flex-1 p-4 overflow-y-auto">
           {/* 🔍 Input */}
@@ -47,18 +55,19 @@ const Sidebar = () => {
             vel imperdiet massa, sed pulvinar ligula. Suspendisse potenti.
           </div>
         </div>
-      </div>
-
+      </motion.div>
+  )}
+</AnimatePresence>
       {/* 🧭 Toggle Button (always visible) */}
    <button
   onClick={toggleSidebar}
   className={`fixed z-50 w-10 h-10 flex items-center justify-center rounded-full
-  backdrop-blur-md border border-[var(--color-solar-line)]
-  bg-[var(--color-solar-surface)]
-  hover:bg-[var(--color-solar-glow)] hover:shadow-glow-soft active:scale-95
-  transition-all duration-300
-  top-[calc(var(--header-margin-top)+var(--header-height)+2vh)]
-  ${isOpen ? 'left-[calc(25vw+1rem)]' : 'left-5'}`}
+  border border-[var(--color-solar-line)]
+  hover:shadow-glow-soft 
+  duration-300
+  top-[calc(var(--header-margin-top)+var(--header-height)+3vh)]
+  bg-indigo-500/20 ring-1 ring-indigo-300/40 backdrop-blur-md shadow-[0_0_20px_5px_rgba(99,102,241,0.35)] hover:bg-indigo-500/30 hover:shadow-[0_0_10px_5px_rgba(99,102,241,0.45)] active:scale-95 transition-all duration-200"
+  ${isOpen ? 'left-[calc(25vw+2rem)]' : 'left-5'}`}
 >
   <IoFilterSharp
     className={`text-xl text-[var(--color-solar-amber)]

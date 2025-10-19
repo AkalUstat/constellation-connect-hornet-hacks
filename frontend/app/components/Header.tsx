@@ -12,15 +12,17 @@ export default function Header() {
         my-[var(--header-margin-top)] mx-[4vw]
         h-[var(--header-height)]
         rounded-xl backdrop-blur-md
-        bg-[var(--color-solar-surface)]
-        border border-[var(--color-solar-line)]
-        shadow-glow transition-all duration-300 ease-in-out
+         transition-all duration-300 ease-in-out
+         bg-gradient-to-br from-indigo-400/40 via-indigo-500/30
+               to-purple-600/20 
+              ring-2 
+              ring-indigo-400/60 
+              shadow-[0_0_20px_5px_rgba(99,102,241,0.5)] 
       `}
     >
-      <p className="text-lg font-bold text-[var(--color-solar-amber)]">
+      <p className="text-lg font-bold text-[color:theme('colors.solar.text.DEFAULT')]">
         Constellation Connect
       </p>
     </header>
   );
 }
-
