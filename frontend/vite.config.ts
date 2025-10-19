@@ -24,5 +24,16 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
+    proxy: {
+      // Forward any request starting with /api to your backend
+      "/api": {
+        target: "http://localhost:5001",
+        changeOrigin: true,
+        // If your backend doesn’t live under /api, uncomment rewrite:
+        // rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+    // Optional: hide the red error overlay while you debug
+    // hmr: { overlay: false },
   },
 });
