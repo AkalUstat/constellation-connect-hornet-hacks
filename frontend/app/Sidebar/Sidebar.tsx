@@ -10,21 +10,25 @@ const Sidebar = () => {
   const [filteredClubs, setFilteredClubs] = useState([]);
 
   // 🔎 Filter by name, category, related, or president
-  useEffect(() => {
-    const filtered = clubsData.filter((club) => {
-      const term = searchTerm.toLowerCase();
+useEffect(() => {
+  const term = searchTerm.toLowerCase();
 
-      return (
-        club.name.toLowerCase().includes(term) ||
-        club.category.toLowerCase().includes(term) ||
-        club.president.toLowerCase().includes(term) ||
-        (club.related &&
-          club.related.some((r) => r.toLowerCase().includes(term)))
-      );
-    });
+  const filtered = clubsData.filter((club) => {
+    const name = club.name?.toLowerCase() || '';
+    const category = club.category?.toLowerCase() || '';
+    const president = club.president?.toLowerCase() || '';
+    const related = club.related?.map(r => r.toLowerCase()) || [];
 
-    setFilteredClubs(filtered);
-  }, [searchTerm]);
+    return (
+      name.includes(term) ||
+      category.includes(term) ||
+      president.includes(term) ||
+      related.some(r => r.includes(term))
+    );
+  });
+
+  setFilteredClubs(filtered);
+}, [searchTerm]);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
