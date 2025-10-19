@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Club = {
   name: string;
@@ -38,7 +39,7 @@ const modalStyle: React.CSSProperties = {
   overflow: "hidden",
 };
 
-const buttonPrimary: React.CSSProperties = {
+const buttonPrimary: React.CSSProperties = { 
   padding: "8px 12px",
   background: "linear-gradient(90deg,#6474ff,#9cf)",
   color: "#041124",
@@ -85,7 +86,14 @@ export default function StarModal({
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div ref={nodeRef} style={modalStyle}>
+      <motion.div
+        ref={nodeRef}
+        style={modalStyle}
+        initial={{ opacity: 0, y: 12, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 8, scale: 0.98 }}
+        transition={{ duration: 0.26, ease: [0.2, 0.9, 0.25, 1] }}
+      >
         {/* top-right close icon */}
         <button
           onClick={onClose}
@@ -107,85 +115,95 @@ export default function StarModal({
           ✕
         </button>
 
-        <div style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
-          <div style={{ width: 12, height: 12, marginTop: 6 }} aria-hidden>
-            <div
-              style={{
-                width: 12,
-                height: 12,
-                borderRadius: 8,
-                background: "radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,0.6) 30%, transparent 60%), #9cf",
-                boxShadow: "0 0 12px rgba(156,204,255,0.6)",
-              }}
-            />
-          </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={club.name}
+            initial={{ opacity: 0, x: 8 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -8 }}
+            transition={{ duration: 0.22, ease: [0.2, 0.9, 0.25, 1] }}
+          >
+            <div style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
+              <div style={{ width: 12, height: 12, marginTop: 6 }} aria-hidden>
+                <div
+                  style={{
+                    width: 12,
+                    height: 12,
+                    borderRadius: 8,
+                    background: "radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,0.6) 30%, transparent 60%), #9cf",
+                    boxShadow: "0 0 12px rgba(156,204,255,0.6)",
+                  }}
+                />
+              </div>
 
-          <div style={{ flex: 1 }}>
-            <h2 style={{ margin: 0, fontSize: 20 }}>{club.name}</h2>
-            <div style={{ color: "#9fb4ff", marginTop: 6 }}>{club.category ?? "No category"}</div>
+              <div style={{ flex: 1 }}>
+                <h2 style={{ margin: 0, fontSize: 20 }}>{club.name}</h2>
+                <div style={{ color: "#9fb4ff", marginTop: 6 }}>{club.category ?? "No category"}</div>
 
-            <div style={{ display: "flex", gap: 12, marginTop: 12 }}>
-              {club.discord ? (
-                <a href={club.discord} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                  <button style={buttonPrimary}>Open Discord</button>
-                </a>
-              ) : (
-                <button style={buttonGhost}>No Discord</button>
-              )}
+                <div style={{ display: "flex", gap: 12, marginTop: 12 }}>
+                  {club.discord ? (
+                    <a href={club.discord} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                      <button style={buttonPrimary}>Open Discord</button>
+                    </a>
+                  ) : (
+                    <button style={buttonGhost}>No Discord</button>
+                  )}
 
-              <button onClick={onClose} style={buttonGhost}>
-                Close
-              </button>
-            </div>
-
-            <div style={{ marginTop: 14, color: "#dbeafe" }}>
-              {club.president && (
-                <p style={{ margin: 0 }}>
-                  <strong>President:</strong> {club.president}
-                </p>
-              )}
-
-              {typeof club.members === "number" && (
-                <p style={{ margin: "6px 0 0 0" }}>
-                  <strong>Members:</strong> {club.members}
-                </p>
-              )}
-
-              {club.meeting_schedule && (
-                <p style={{ margin: "6px 0 0 0" }}>
-                  <strong>Meeting schedule:</strong> {club.meeting_schedule}
-                </p>
-              )}
-
-              {club.next_meetings && club.next_meetings.length > 0 && (
-                <div style={{ marginTop: 10 }}>
-                  <strong>Upcoming meetings</strong>
-                  <ul style={{ marginTop: 8 }}>
-                    {club.next_meetings.map((m, idx) => (
-                      <li key={idx} style={{ color: "#cbd5e1" }}>
-                        {m.date} {m.time ? `· ${m.time}` : ""} {m.location ? `· ${m.location}` : ""}
-                      </li>
-                    ))}
-                  </ul>
+                  <button onClick={onClose} style={buttonGhost}>
+                    Close
+                  </button>
                 </div>
-              )}
 
-              {club.related && club.related.length > 0 && (
-                <div style={{ marginTop: 10 }}>
-                  <strong>Related:</strong>
-                  <ul style={{ marginTop: 8 }}>
-                    {club.related.map((r) => (
-                      <li key={r} style={{ color: "#cbd5e1" }}>
-                        {r}
-                      </li>
-                    ))}
-                  </ul>
+                <div style={{ marginTop: 14, color: "#dbeafe" }}>
+                  {club.president && (
+                    <p style={{ margin: 0 }}>
+                      <strong>President:</strong> {club.president}
+                    </p>
+                  )}
+
+                  {typeof club.members === "number" && (
+                    <p style={{ margin: "6px 0 0 0" }}>
+                      <strong>Members:</strong> {club.members}
+                    </p>
+                  )}
+
+                  {club.meeting_schedule && (
+                    <p style={{ margin: "6px 0 0 0" }}>
+                      <strong>Meeting schedule:</strong> {club.meeting_schedule}
+                    </p>
+                  )}
+
+                  {club.next_meetings && club.next_meetings.length > 0 && (
+                    <div style={{ marginTop: 10 }}>
+                      <strong>Upcoming meetings</strong>
+                      <ul style={{ marginTop: 8 }}>
+                        {club.next_meetings.map((m, idx) => (
+                          <li key={idx} style={{ color: "#cbd5e1" }}>
+                            {m.date} {m.time ? `· ${m.time}` : ""} {m.location ? `· ${m.location}` : ""}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {club.related && club.related.length > 0 && (
+                    <div style={{ marginTop: 10 }}>
+                      <strong>Related:</strong>
+                      <ul style={{ marginTop: 8 }}>
+                        {club.related.map((r) => (
+                          <li key={r} style={{ color: "#cbd5e1" }}>
+                            {r}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </AnimatePresence>
+        </motion.div>
     </div>
   );
 }

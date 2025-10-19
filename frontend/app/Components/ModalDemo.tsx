@@ -2,19 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import clubsData from "../data/clubs.json";
 
-export default function ModalStarFab() {
-  const [open, setOpen] = useState(false);
+export default function ModalStarFab() { //this function creates the floating action button and modal
+  const [open, setOpen] = useState(false); 
   const [clubName] = useState("Concrete Canoe Club");
   const overlayRef = useRef<HTMLDivElement | null>(null);
 
-  const club = clubsData.find((c) => c.name === clubName);
+  const club = clubsData.find((c) => c.name === clubName); // find club data
   const name = club?.name || "Unknown Club";
   const category = club?.category || "Unknown Category";
   const president = club?.president || "Unknown President";
   const discord = club?.discord || null;
-  const members = club?.members ?? "Unknown Number of Members";
+  const members = club?.members ?? "Unknown Number of Members"; // could be 0
   const meetingSchedule = club?.meeting_schedule || null;
-  const nextMeetings = club?.next_meetings || [];
+  const nextMeetings = club?.next_meetings || []; // array of meetings
 
   useEffect(() => {
     if (!open) return;
